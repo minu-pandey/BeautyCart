@@ -1,0 +1,356 @@
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:padding="8dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <Button
+            android:id="@+id/Appointments_r_accept"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Reject"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/Appointments_r_reject"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/Appointments_r_user_details_root"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_user_details_root" />
+
+        <Button
+            android:id="@+id/Appointments_r_reject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/departure_ready"
+            android:text="Accept"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Appointments_r_user_details_root"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_user_details_root" />
+
+
+        <LinearLayout
+            android:id="@+id/Appointments_r_user_details_root"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/Appointments_r_list_of_products"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_total_amount">
+            <TextView
+
+                android:id="@+id/Appointments_r_shippingdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:drawableEnd="@drawable/up_down"
+                android:text="Show shipping details"
+                android:textColor="#2B2B52"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/Appointments_r_user_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Username           :" />
+
+                    <TextView
+                        android:id="@+id/Appointments_r_user_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:text="Arunachalam"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/Appointments_r_user_email_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Email                    :" />
+
+                    <TextView
+                        android:id="@+id/Appointments_r_user_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/Appointments_r_user_email_view"
+                        android:text="arunabimanyu7@gmail.com"
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Phone number  :" />
+
+                    <TextView
+                        android:id="@+id/Appointments_r_user_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:text="7539907927"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/Appointments_r_user_address_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Address               :" />
+
+                    <TextView
+                        android:id="@+id/Appointments_r_user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/Appointments_r_user_address_text"
+                        android:text="First Floor, Samay Trading Company, Temple Steps, 184-187, Anna Salai, Block 1, Little Mount, Saidapet, Chennai, Tamil Nadu 600015"
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Appointments_r_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Pedicure"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Appointments_r_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="80127563"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Appointments_r_package_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="order id :"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Appointments_r_order_id"
+            app:layout_constraintEnd_toStartOf="@+id/Appointments_r_order_id"
+            app:layout_constraintTop_toTopOf="@+id/Appointments_r_order_id" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Products"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/Appointments_r_list_of_products"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ordered on"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="@+id/Appointments_r_list_of_products"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_list_of_products" />
+
+        <TextView
+            android:id="@+id/Appointments_r_order_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="16 Sep 2019 at 9:21"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total Amount"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="@+id/Appointments_r_order_date_time"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_time_slot" />
+
+        <TextView
+            android:id="@+id/Appointments_r_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="$255.00"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#EAF0F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_package_name" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <Button
+
+            android:id="@+id/Appointments_r_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/departure_waiting"
+            android:text="Departure on 16 sep"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Appointments_r_user_details_root"
+            app:layout_constraintStart_toStartOf="@+id/Appointments_r_user_details_root"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_departure_info" >
+
+        </Button>
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Time Slot"
+            app:layout_constraintStart_toStartOf="@+id/Appointments_r_order_date_time"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_order_date_time" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/Appointments_r_time_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/Appointments_r_departure_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="* You can only departure on appointment date"
+            app:layout_constraintEnd_toEndOf="@+id/Appointments_r_user_details_root"
+            app:layout_constraintStart_toStartOf="@+id/Appointments_r_user_details_root"
+            app:layout_constraintTop_toBottomOf="@+id/Appointments_r_user_details_root" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

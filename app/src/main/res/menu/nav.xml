@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:icon="@drawable/ic_packages"
+    android:id="@+id/Menu_Packages"
+    android:title="Packages">
+
+</item>
+    <item
+        android:icon="@drawable/ic_appointments"
+        android:id="@+id/Menu_appointments"
+        android:title="Appointments">
+
+    </item>
+<!--    <item-->
+<!--        android:icon="@drawable/ic_account"-->
+<!--        android:id="@+id/Menu_profile"-->
+<!--        android:title="Profile">-->
+
+<!--    </item>-->
+
+</menu>

@@ -1,0 +1,108 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="16dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="8dp">
+
+            <Button
+
+                android:id="@+id/Cart_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Cart_count"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/montserratbold"
+                android:text="Remove"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+
+
+                android:id="@+id/Cart_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/Cart_count"
+                android:src="@drawable/ic_remove" />
+
+
+            <ImageView
+                android:id="@+id/Cart_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+
+                android:src="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/Cart_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toStartOf="@id/Cart_remove"
+                android:layout_toEndOf="@id/Cart_v_line"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/montserratbold"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/Cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/Cart_add"
+                android:fontFamily="@font/bbold"
+                android:text="7"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/Cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Cart_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/Cart_v_line"
+
+                android:text="₹ 50" />
+
+
+            <View
+                android:id="@+id/Cart_v_line"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:background="@color/colorAccent" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

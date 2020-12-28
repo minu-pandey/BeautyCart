@@ -1,0 +1,111 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="8dp">
+
+            <ImageView
+
+                android:id="@+id/Product_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_add" />
+
+
+            <ImageView
+
+
+                android:id="@+id/Product_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/Product_count"
+                android:src="@drawable/ic_remove" />
+
+            <TextView
+                android:id="@+id/Product_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Product_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/Product_actual_price"
+                android:text="₹ 50" />
+
+
+            <TextView
+                android:id="@+id/Product_offer_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Product_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/Product_original_price"
+                android:background="@drawable/text_outline"
+
+                android:padding="3dp"
+                android:text="OFF 40%"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp" />
+
+            <TextView
+android:layout_alignParentStart="true"
+                android:id="@+id/Product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:text="Eye Bsadddddddddddddddddddddddrow"
+                android:layout_toStartOf="@id/Product_remove"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Product_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/Product_add"
+                android:fontFamily="@font/bbold"
+                android:text="7"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/Product_actual_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Product_title"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="₹ 30" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

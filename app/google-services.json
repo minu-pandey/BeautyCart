@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "606450659884",
+    "firebase_url": "https://beautycart-bc8d4.firebaseio.com",
+    "project_id": "beautycart-bc8d4",
+    "storage_bucket": "beautycart-bc8d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606450659884:android:46886f4afe42494c22d789",
+        "android_client_info": {
+          "package_name": "com.juhi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606450659884-oreagrcnbt8ch5mo1j0cnko40rrvvnmf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juhi",
+            "certificate_hash": "d9e22d7483a6bf097747801451d4cd19693e604a"
+          }
+        },
+        {
+          "client_id": "606450659884-23g4ttu1chr8s9mvgh4q8n10jcfml69n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGLOh7KuwK3MTwGusO9pe57z7vEBH_J4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606450659884-23g4ttu1chr8s9mvgh4q8n10jcfml69n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
